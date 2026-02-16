@@ -9,18 +9,15 @@ TARGET_DIR="${1:-.}"
 
 find "$TARGET_DIR" \
   -type d \( \
+    -name '.*' -o \
     -name node_modules -o \
-    -name .git -o \
     -name vendor -o \
     -name __pycache__ -o \
     -name dist -o \
     -name build -o \
-    -name .next -o \
     -name coverage -o \
-    -name .venv -o \
     -name venv -o \
-    -name target -o \
-    -name .build \
+    -name target \
   \) -prune -o \
   -type f \( \
     -name '*.md' -o \

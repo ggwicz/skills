@@ -16,7 +16,7 @@ Review text files against the U.S. federal government Plain Language Guidelines 
 
 ## Review Workflow
 
-1. **Select files** — Use the user's specified files. If none specified, run `scripts/scan-files.sh` to discover all `.md`, `.mdx`, `.txt`, `.rst`, and `.adoc` files in the project.
+1. **Select files** — Use the user's specified files. If none specified, run `scripts/scan-files.sh <project-directory>` to discover all `.md`, `.mdx`, `.txt`, `.rst`, and `.adoc` files. The `<project-directory>` argument is **required** — it must be the root of the user's project (the repository being reviewed), NOT the skill's own directory.
 2. **Load rules** — Read `references/rules-quick-ref.md` for the full rule checklist.
 3. **Review each file** — For each file, read it and apply all rules. Skip text inside code blocks/fences, inline code, and code-only files. Only review human-readable prose.
 4. **Generate findings** — For each issue found, produce a finding using the output format below.

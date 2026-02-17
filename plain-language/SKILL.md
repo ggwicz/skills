@@ -56,6 +56,8 @@ Use this exact structure for each finding:
 - **Suggested:** "The setup script initializes the database."
 ```
 
+If a file has no findings, omit it from the report entirely — do not list it.
+
 End the report with a summary:
 
 ```

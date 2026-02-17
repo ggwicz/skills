@@ -37,3 +37,7 @@ Readable but could be tighter. Address if time permits.
 | You will need to install the dependencies, configure the environment variables, and then run the test suite. | You'll need to: (1) install dependencies, (2) configure environment variables, and (3) run the test suite. | Readable as-is, but a list makes it scannable. |
 | It is not possible to undo this action. | You can't undo this action. | Readable, but "It is not possible" is wordier than needed. |
 | Configuration | How to configure the app | Heading is vague — a statement or question heading is clearer. |
+
+## No Findings
+
+If a file has no findings after applying all rules, omit it from the report entirely. Do not include a "no issues found" entry. The summary's "Files reviewed" count should still include it.

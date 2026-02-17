@@ -24,7 +24,8 @@ Review text files against the U.S. federal government Plain Language Guidelines 
 3. **Review each file** — For each file, read it and apply all rules. Skip text inside code blocks/fences, inline code, and code-only files. Only review human-readable prose.
 4. **Generate findings** — For each issue found, produce a finding using the output format below.
 5. **Classify severity** — Use `references/severity-rubric.md` to assign high/medium/low.
-6. **Assemble report** — Group findings by file, then by severity (high first).
+6. **Verify rewrites** — For each suggested rewrite, confirm it resolves the flagged rule violation and does not introduce new violations. If a rewrite still triggers the same or a different rule, revise it before including it in the report.
+7. **Assemble report** — Group findings by file, then by severity (high first).
 
 ## Output Format
 

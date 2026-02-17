@@ -133,3 +133,51 @@ After:
 > You must get the agency's express approval for any noise compatibility program.
 
 **Rules demonstrated:** Use positive language, use active voice, address the user
+
+---
+
+## 11. README with hidden verbs and wordiness
+
+Before:
+> The installation of the package can be accomplished by utilization of npm. Configuration of the environment variables is a requirement prior to the initialization of the application.
+
+After:
+> Install the package with npm. Configure your environment variables before you start the application.
+
+**Rules demonstrated:** Avoid hidden verbs ("installation of" → "install", "utilization of" → use of → with, "initialization of" → "start"), use simple words, use active voice, write short sentences
+
+---
+
+## 12. Confusing API documentation
+
+Before:
+> In the event that the request payload does not contain a valid authentication token, the server will return an error response that indicates the request has not been authorized, and the client application should make a determination as to whether to redirect the user to the login page or to display an appropriate error message.
+
+After:
+> If the request has no valid auth token, the server returns a 401 error. Your app should either redirect the user to the login page or show an error message.
+
+**Rules demonstrated:** Use simple words ("in the event that" → "if"), avoid hidden verbs ("make a determination" → decide/should), write short sentences, use active voice
+
+---
+
+## 13. Verbose error message
+
+Before:
+> An error was encountered during the process of attempting to establish a connection to the database server. It is recommended that you verify that the server is currently running and that your connection parameters have been configured correctly.
+
+After:
+> Could not connect to the database. Check that the server is running and your connection settings are correct.
+
+**Rules demonstrated:** Use active voice, write short sentences, use simple words, cut wordiness
+
+---
+
+## 14. UI string with passive voice and jargon
+
+Before:
+> Your submission has been received and will be processed by our team. You will be notified via email upon completion of the review.
+
+After:
+> We received your submission. Our team will review it and email you when it's done.
+
+**Rules demonstrated:** Use active voice, address the user, use simple words ("upon completion of the review" → "when it's done"), write short sentences

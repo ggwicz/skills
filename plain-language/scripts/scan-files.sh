@@ -1,11 +1,16 @@
 #!/bin/sh
 # scan-files.sh — Find reviewable text files in a project directory.
-# Usage: scan-files.sh [directory]
-# Defaults to current directory if no argument given.
+# Usage: scan-files.sh <directory>
 
 set -e
 
-TARGET_DIR="${1:-.}"
+if [ -z "$1" ]; then
+  echo "Usage: scan-files.sh <project-directory>" >&2
+  echo "Error: project directory argument is required." >&2
+  exit 1
+fi
+
+TARGET_DIR="$1"
 
 find "$TARGET_DIR" \
   -type d \( \

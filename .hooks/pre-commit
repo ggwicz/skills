@@ -8,6 +8,16 @@ echo "Validating skills..."
 
 errors=0
 
+# Extract YAML frontmatter between --- markers (handles multi-line values)
+get_frontmatter() {
+  awk 'NR==1 && /^---$/{found=1; next} found && /^---$/{exit} found{print}' "$1"
+}
+
+# Extract a top-level YAML key value (single-line only, sufficient for name)
+get_yaml_key() {
+  echo "$1" | grep "^$2:" | sed "s/^$2:[[:space:]]*//"
+}
+
 # Find all skill directories (any directory containing a SKILL.md)
 for skill_dir in */; do
   skill_file="${skill_dir}SKILL.md"
@@ -16,21 +26,23 @@ for skill_dir in */; do
   skill_name=$(basename "$skill_dir")
   echo "  Checking $skill_name..."
 
+  frontmatter=$(get_frontmatter "$skill_file")
+
   # 1. SKILL.md must have a name field in frontmatter
-  if ! head -20 "$skill_file" | grep -q "^name:"; then
+  if ! echo "$frontmatter" | grep -q "^name:"; then
     echo "    ERROR: $skill_file missing 'name:' in frontmatter"
     errors=$((errors + 1))
   fi
 
   # 2. name field must match directory name
-  declared_name=$(head -20 "$skill_file" | grep "^name:" | sed 's/^name:[[:space:]]*//')
+  declared_name=$(get_yaml_key "$frontmatter" "name")
   if [ "$declared_name" != "$skill_name" ]; then
     echo "    ERROR: name '$declared_name' does not match directory '$skill_name'"
     errors=$((errors + 1))
   fi
 
   # 3. SKILL.md must have a description field
-  if ! head -20 "$skill_file" | grep -q "^description:"; then
+  if ! echo "$frontmatter" | grep -q "^description:"; then
     echo "    ERROR: $skill_file missing 'description:' in frontmatter"
     errors=$((errors + 1))
   fi

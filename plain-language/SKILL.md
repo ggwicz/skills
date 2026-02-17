@@ -1,18 +1,21 @@
 ---
 name: plain-language
 description: >
-  Review project text (documentation, READMEs, marketing copy, UI strings, code
-  comments, error messages) for plain language compliance and produce structured
+  Reviews project text (documentation, READMEs, marketing copy, UI strings, code
+  comments, error messages) for plain language compliance and produces structured
   edit recommendations based on the U.S. federal government Plain Language Guidelines
   (https://digital.gov/guides/plain-language). Use when asked to: review language, check readability,
   audit docs, improve copy clarity, do a plain language check, make a README
   clearer, or review writing quality. Triggers on phrases like "plain language
   review", "check readability", "audit the copy", "make this clearer".
+allowed-tools: Read Bash(scripts/scan-files.sh:*)
 ---
 
 # Plain Language Review
 
 Review text files against the U.S. federal government Plain Language Guidelines (~30 rules across 6 categories) and produce a structured report of findings with concrete rewrites.
+
+**Important: This skill produces a report. Do not modify any reviewed files.**
 
 ## Review Workflow
 

@@ -6,7 +6,7 @@ Checklist of all rules from the U.S. federal government Plain Language Guideline
 
 | Rule | What to check | Priority |
 |------|--------------|----------|
-| Use simple words | Replace complex words with everyday alternatives. See `word-substitutions.md` for the full table. | Critical |
+| Use simple words | Replace complex words with everyday alternatives. Always flag the Dirty Dozen (below). See `word-substitutions.md` for the full table. | Critical |
 | Avoid jargon | Cut unnecessary technical, legal, and business jargon. Keep necessary technical terms but simplify the sentence around them. | Critical |
 | Avoid hidden verbs | Don't nominalize verbs. "make a determination" → "determine". Watch for -ment, -tion, -sion, -ance endings paired with weak verbs (achieve, effect, give, have, make, reach, take). | High |
 | Use terms consistently | Pick one term per concept. Don't synonym-swap ("senior citizens" then "the elderly"). | High |
@@ -14,6 +14,23 @@ Checklist of all rules from the U.S. federal government Plain Language Guideline
 | Minimize abbreviations | Use nicknames instead ("the committee" not "ESAC"). Define abbreviations on first use. Limit to 2-3 per document. | Medium |
 | Place words carefully | Keep modifiers next to what they modify. Put long conditions after the main clause. | Medium |
 | Minimize definitions | If you need many definitions, you're using too much jargon. Define terms inline where you use them, not in a separate section. If a definition section is necessary, place it at the end and list alphabetically. Never define terms you don't use in the document. | Low |
+
+### The Dirty Dozen (always flag these)
+
+| Instead of | Use |
+|-----------|-----|
+| addressees | you |
+| assist, assistance | aid, help |
+| commence | begin, start |
+| implement | carry out, start |
+| in accordance with | by, following, per, under |
+| in order that | for, so |
+| in the amount of | for |
+| in the event of | if |
+| it is | (omit or restructure) |
+| promulgate | issue, publish |
+| this activity, command | us, we |
+| utilize, utilization | use |
 
 ## Conversational
 

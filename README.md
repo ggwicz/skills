@@ -4,10 +4,13 @@ Agent skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code), 
 
 ## Available skills
 
-| Skill | Description | Install |
-|-------|-------------|---------|
-| [code-hygiene](code-hygiene/) | Review code for structural quality violations and code smells across any programming language | `npx skills add ggwicz/skills --skill code-hygiene` |
-| [plain-language](plain-language/) | Review text for plain language compliance based on U.S. federal government Plain Language Guidelines | `npx skills add ggwicz/skills --skill plain-language` |
+- **[code-hygiene](code-hygiene/)**
+  Review code for structural quality violations and code smells across any programming language.
+  `npx skills add ggwicz/skills --skill code-hygiene`
+
+- **[plain-language](plain-language/)**
+  Review text for plain language compliance based on U.S. federal government Plain Language Guidelines.
+  `npx skills add ggwicz/skills --skill plain-language`
 
 ## Install a skill
 

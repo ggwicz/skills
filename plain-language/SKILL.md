@@ -84,46 +84,16 @@ Load references on demand to conserve context:
 | `references/before-and-after-examples.md` | When crafting suggested rewrites — use as transformation models |
 | `references/severity-rubric.md` | When classifying findings — consult definitions and examples |
 
-## Key Rules by Priority
-
-**Critical (always flag):**
-- Use simple words and phrases (check against the Dirty Dozen first)
-- Avoid jargon (unnecessary complexity, not legitimate technical terms)
-- Use active voice (passive voice hides responsibility)
-
-**High (flag unless context justifies):**
-- Avoid hidden verbs ("make a determination" → "determine")
-- Use terms consistently (don't synonym-swap)
-- Write short sentences (~20 words)
-- Keep subject-verb-object close together
-- Use present tense
-- Use "must" not "shall" for requirements
-- Address the user ("you")
-- Place main idea before exceptions
-
-**Medium (flag with lighter touch):**
-- Avoid noun strings (3+ stacked nouns)
-- Minimize abbreviations
-- Write short paragraphs and sections
-- Use lists for series
-- Use positive language (avoid double negatives)
-- Add useful headings
-- Cut excess modifiers (really, very, basically, totally, etc.)
-- Avoid doublets and triplets ("cease and desist" → "stop", "null and void" → "void")
-- Use general-to-specific order (broad info first, specialized details later)
-- Use chronological order for processes (steps in the sequence users follow)
-
-**Low (note, don't belabor):**
-- Use contractions where natural (context-dependent)
-- Don't use slashes ("and/or")
-- Minimize cross-references
+---
 
 ## Scope Rules
 
 - **Review:** prose in `.md`, `.mdx`, `.txt`, `.rst`, `.adoc` files; comments in source code files; UI strings; error messages
 - **Skip:** code inside fences/backticks, variable names, import statements, configuration values, URLs, file paths
-- **Don't rewrite files** — produce recommendations only. The human or agent decides what to apply.
-- **Preserve technical terms** — flag jargon only when a simpler alternative exists without losing precision. "Brinulator valve" is fine; "utilize the brinulator valve" is not.
+- **Preserve technical terms** — flag jargon only when a simpler alternative exists without losing precision
+- **Do not modify reviewed files** — produce recommendations only
+
+---
 
 ## Attribution
 

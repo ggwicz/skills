@@ -16,15 +16,19 @@ Review text files against the U.S. federal government Plain Language Guidelines 
 
 **Important: This skill produces a report. Do not modify any reviewed files.**
 
+---
+
 ## Review Workflow
 
 1. **Select files** — Use the user's specified files. If none specified, run `scripts/scan-files.sh <project-directory>` to discover all `.md`, `.mdx`, `.txt`, `.rst`, and `.adoc` files. The `<project-directory>` argument is **required** — it must be the root of the user's project (the repository being reviewed), NOT the skill's own directory.
 2. **Load rules** — Read `references/rules-quick-ref.md` for the full rule checklist.
 3. **Review each file** — For each file, read it and apply all rules. Skip text inside code blocks/fences, inline code, and code-only files. Only review human-readable prose.
-4. **Generate findings** — For each issue found, produce a finding using the output format below.
+4. **Generate findings** — For each issue found, produce a finding using the Output Format below.
 5. **Classify severity** — Use `references/severity-rubric.md` to assign high/medium/low.
 6. **Verify rewrites** — For each suggested rewrite, confirm it resolves the flagged rule violation and does not introduce new violations. If a rewrite still triggers the same or a different rule, revise it before including it in the report.
-7. **Assemble report** — Group findings by file, then by severity (high first).
+7. **Assemble report** — Write findings to `plain-language-findings-YYYYMMDD.md` in the project root (use today's date). Group findings by file, then by severity (high first). End with the summary block.
+
+---
 
 ## Output Format
 
@@ -65,6 +69,8 @@ End the report with a summary:
 - **Total findings:** [N] ([N] high, [N] medium, [N] low)
 - **Top issues:** [List the 2-3 most frequent rule violations]
 ```
+
+---
 
 ## When to Load Reference Files
 

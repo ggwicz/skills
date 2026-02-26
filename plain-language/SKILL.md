@@ -1,14 +1,13 @@
 ---
 name: plain-language
-description: >
-  Reviews project text (documentation, READMEs, marketing copy, UI strings, code
-  comments, error messages) for plain language compliance and produces structured
-  edit recommendations based on the U.S. federal government Plain Language Guidelines
-  (https://digital.gov/guides/plain-language). Use when asked to: review language, check readability,
-  audit docs, improve copy clarity, do a plain language check, make a README
-  clearer, or review writing quality. Triggers on phrases like "plain language
-  review", "check readability", "audit the copy", "make this clearer".
-allowed-tools: Read Bash(scripts/scan-files.sh:*)
+description: >-
+  Reviews project text — documentation, READMEs, marketing copy, UI strings,
+  code comments, error messages — for compliance with the U.S. federal
+  government Plain Language Guidelines. Produces structured edit
+  recommendations with concrete rewrites. Activates on plain language
+  review, readability check, copy audit, "make this clearer," or
+  "improve the writing."
+allowed-tools: Read Write Glob Grep Bash(scripts/scan-files.sh:*)
 ---
 
 # Plain Language Review

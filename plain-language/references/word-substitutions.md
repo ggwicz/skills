@@ -2,24 +2,7 @@
 
 From the U.S. federal government Plain Language Guidelines (https://digital.gov/guides/plain-language). Public domain.
 
-## The Dirty Dozen (highest priority)
-
-These 12 words are the most common offenders. Always flag them.
-
-| Instead of | Use |
-|-----------|-----|
-| addressees | you |
-| assist, assistance | aid, help |
-| commence | begin, start |
-| implement | carry out, start |
-| in accordance with | by, following, per, under |
-| in order that | for, so |
-| in the amount of | for |
-| in the event of | if |
-| it is | (omit or restructure) |
-| promulgate | issue, publish |
-| this activity, command | us, we |
-| utilize, utilization | use |
+The Dirty Dozen are in `rules-quick-ref.md`. This file contains the full substitution table.
 
 ## Full Substitution Table
 

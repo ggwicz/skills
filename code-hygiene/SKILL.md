@@ -7,9 +7,6 @@ description: >-
   audit, code quality check, code smells, "clean this up," "make this
   more maintainable," or "reduce complexity."
 allowed-tools: Read Write Glob Grep Bash(scripts/scan-code.sh:*)
-metadata:
-  author: george
-  version: "3.1"
 ---
 
 # Code Hygiene Review

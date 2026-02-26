@@ -6,7 +6,7 @@ description: >-
   with concrete refactoring suggestions. Activates on code review, code
   audit, code quality check, code smells, "clean this up," "make this
   more maintainable," or "reduce complexity."
-allowed-tools: Read Write Glob Grep Bash(scripts/scan-code.sh:*)
+allowed-tools: Read Write Glob Grep Bash(scripts/scan-source-files.sh:*)
 ---
 
 # Code Hygiene Review
@@ -19,7 +19,7 @@ Review source code against 10 language-agnostic structural quality principles an
 
 ## Review Workflow
 
-1. **Select files** — Use the user's specified files. If none specified, run `scripts/scan-code.sh <project-directory>` to discover source files. The `<project-directory>` argument is **required** — it must be the root of the user's project, NOT the skill's own directory.
+1. **Select files** — Use the user's specified files. If none specified, run `scripts/scan-source-files.sh <project-directory>` to discover source files. The `<project-directory>` argument is **required** — it must be the root of the user's project, NOT the skill's own directory.
 2. **Load rules** — Read `references/principles-quick-ref.md` for the full checklist with detection signals and thresholds.
 3. **Review each file** — Read each file and check against all 10 principles. Load detailed reference files on demand as violations are detected (see "When to Load Reference Files").
 4. **Generate findings** — For each issue found, produce a finding using the Output Format below.
